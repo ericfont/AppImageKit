@@ -55,7 +55,8 @@ if [ -e /usr/bin/pacman ] ; then
 fi
 
 if [ "$1" == "--fetch-dependencies-only" ] ; then
-  exit
+  echo "Fetched dependencies.  Exiting now."
+  exit 0
 fi
 
 cd "${HERE}"
