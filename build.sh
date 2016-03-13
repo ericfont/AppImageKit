@@ -14,9 +14,9 @@ if (( $EUID != 0 )); then
 fi
 
 if [ -e /usr/bin/apt-get ] ; then
+  echo "using apt-get"
   $SUDO apt-get update
   $SUDO apt-get -y install libfuse-dev libglib2.0-dev cmake git libc6-dev binutils fuse python
-
 fi
 
 if [ -e /usr/bin/yum ] ; then
